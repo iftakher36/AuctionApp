@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214017885313",
+    "project_id": "ostadauctionapp",
+    "storage_bucket": "ostadauctionapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214017885313:android:77876f08220f16559b3980",
+        "android_client_info": {
+          "package_name": "com.OstadAuctionApp.auction_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214017885313-j01bsofkmjsc01hag2s78kprotk1n9t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtu0p12aiK1MDEm_WR7ra9rnazzhg_dFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214017885313-j01bsofkmjsc01hag2s78kprotk1n9t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
