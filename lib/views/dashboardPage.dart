@@ -35,7 +35,7 @@ class _MyDashBoardState extends State<MyDashBoard>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-    /*    leading: Padding(
+        leading: Padding(
           padding: const EdgeInsets.only(left: 10.0),
           child: CircleAvatar(
             radius: 10,
@@ -61,7 +61,7 @@ class _MyDashBoardState extends State<MyDashBoard>
               style: const TextStyle(fontSize: 12),
             ),
           ],
-        ),*/
+        ),
       ),
       body: Column(
         children: [
