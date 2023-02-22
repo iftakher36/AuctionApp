@@ -15,8 +15,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   void initState() {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      _signInOutViewModel =
-          Provider.of<UserSignInOutViewModel>(context, listen: false);
+      _signInOutViewModel = Provider.of<UserSignInOutViewModel>(context, listen: false);
       _signInOutViewModel.checkIfCurrentlyAnyOneLogin(context);
     });
     super.initState();
@@ -58,7 +57,7 @@ class _SignInPageState extends State<SignInPage> {
                       backgroundColor: MaterialStateProperty.all(Colors.white)),
                   onPressed: () {
                     Provider.of<UserSignInOutViewModel>(context, listen: false)
-                        .signInToGoogleGmail();
+                        .signInToGoogleGmail(context);
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,

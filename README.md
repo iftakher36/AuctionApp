@@ -20,3 +20,16 @@ This package used to authenticate google user by their Gmail ---> 1. first step 
 gmail accounts stored in device using google sign in ----> 2. then selected user mail will be
 authenticate via OAuth Provider ----> 3. after that Oauth verified user will register to firebase via
 Firebase Auth Package
+
+## Firebase Storage
+
+This package used to upload the image file to the firebase cloud storage and user wise added the
+uploaded file link to The firebase cloud fire-store database
+
+## Cloud Firestore Package
+
+This package used to store the Product Name, Product Description, Product Photo link that stored in
+firebase storage , Minimum Bid Price, and Auction End DateTime by User Wise
+
+## ImagePicker Package
+Image Picker Package added to pick images from gallery and upload the image to cloud storage

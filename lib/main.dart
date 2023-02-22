@@ -1,7 +1,10 @@
 import 'package:auction_app/utils/constant.dart';
+import 'package:auction_app/viewmodel/add_product_viewmodel.dart';
+import 'package:auction_app/viewmodel/dashboard_viewmodel.dart';
 import 'package:auction_app/viewmodel/user_sign_in_out_viewmodel.dart';
 import 'package:auction_app/views/SignInPage.dart';
-import 'package:auction_app/views/dashboard.dart';
+import 'package:auction_app/views/add_productPage.dart';
+import 'package:auction_app/views/dashboardPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -25,6 +28,8 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (ctx) => UserSignInOutViewModel()),
+          ChangeNotifierProvider(create: (ctx) => AddProductViewModel()),
+          ChangeNotifierProvider(create: (ctx) => DashboardViewModel()),
         ],
         child: MaterialApp(
           title: 'Auction App',
@@ -34,7 +39,8 @@ class MyApp extends StatelessWidget {
           ),
           routes: {
             Constant.signInPage: (ctx) => const SignInPage(),
-            Constant.dashBoardPage: (ctx) => const MyDashBoard()
+            Constant.dashBoardPage: (ctx) => const MyDashBoard(),
+            Constant.addProductPage: (ctx) => const AddProductPage(),
           },
         ));
   }
